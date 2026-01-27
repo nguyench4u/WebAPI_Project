@@ -1,0 +1,36 @@
+HTTP HEADERS ANALYSIS - Google Books API Requests/Responses
+===========================================================
+
+GET https://www.googleapis.com/books/v1/volumes?q=Turing
+200
+
+REQUEST HEADERS:
+
+User-Agent: PostmanRuntime/7.51.0
+  - Identifies the client software making the request (Postman version 7.51.0)
+Accept: */*
+  - Tells the server the client can accept any content type in the response
+Cache-Control: no-cache
+  - Instructs the server not to cache this response; proxies not to cache the content
+Postman-Token: 698ec3b2-b517-420c-a5f3-63ba8115eba9
+  - Unique identifier for this request to prevent CSRF attacks
+Host: www.googleapis.com - host server
+Accept-Encoding: gzip, deflate, br
+  - Accepts compression formats the client can decompress (gzip, deflate)
+Connection: keep-alive
+  - Requests a persistent TCP connection for multiple requests
+
+RESPONSE HEADERS:
+
+HTTP/1.1 200 OK - Status code indicating successful request
+Content-Type: application/json; charset=UTF-8
+Vary: Origin, X-Origin, Referer
+Content-Encoding: gzip
+Date: Tue, 27 Jan 2026 00:23:25 GMT
+Server: ESF
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=":443"; ma=2592000
+  - Server supports HTTP/3 protocol for future requests
+Transfer-Encoding: chunked
